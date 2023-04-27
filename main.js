@@ -3,7 +3,7 @@
 const logo = document.querySelector(`.logo-box`);
 const landing = document.querySelector(`.landing-main`);
 const logoInitialSize = logo.offsetWidth;
-const logoSmallSize = logoInitialSize / 4;
+const logoSmallSize = logoInitialSize / 3;
 const logoInitialPosition = logo.getBoundingClientRect().top;
 console.log(logoInitialPosition);
 
