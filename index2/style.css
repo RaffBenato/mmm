@@ -22,6 +22,7 @@ a {
 }
 
 .toptier {
+  width: 100%;
   height: 40vh;
   background-color: whitesmoke;
   border-bottom-right-radius: 20px;
@@ -31,12 +32,72 @@ a {
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   padding: 30px;
+}
+
+.menu {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(245, 245, 245, 0.727);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding: 30px;
+  transition: all 1s ease-in-out;
+}
+
+.menu.show {
+  transform: translateY(70%);
+}
+
+.menu-item {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .logo-img {
   max-width: 80%;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  bottom: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.btn-line1.close {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.btn-line2.close {
+  opacity: 0;
+}
+
+.btn-line3.close {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
 }
 
 .landing {
