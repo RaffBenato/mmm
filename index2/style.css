@@ -106,7 +106,7 @@ a {
 }
 
 .landing {
-  height: 72vh;
+  min-height: 72vh;
   margin-top: 28vh;
   width: 100%;
   background-image: url("./img/bg.jpg");
@@ -116,6 +116,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 15px;
 }
 
 .slogan {
@@ -127,6 +128,41 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+.main-subtitle {
+  font-size: 1.8rem;
+}
+
+.main-text {
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.main-bio-pic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px;
+  background-image: url("./img/bio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slogan span {
