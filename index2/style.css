@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgba(49, 39, 39, 0.933);
+  background-color: black;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ a {
 }
 
 .container {
-  height: 60vh;
+  height: 63vh;
 }
 
 .toptier {
@@ -47,14 +47,14 @@ a {
   justify-content: flex-end;
   align-items: flex-end;
   position: fixed;
-  top: 0;
+  top: -10vh;
   z-index: 2;
   padding: 30px;
   transition: all 1s ease-in-out;
 }
 
 .menu.show {
-  transform: translateY(93%);
+  transform: translateY(113%);
 }
 
 .menu-item {
@@ -106,14 +106,15 @@ a {
 }
 
 .landing {
-  min-height: 72vh;
-  margin-top: 28vh;
+  min-height: 75vh;
+  margin-top: 27vh;
   width: 100%;
   background-image: url("./img/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px 15px;
@@ -178,7 +179,40 @@ a {
 .main-link {
   font-size: 4rem;
   color: whitesmoke;
-  animation: color-cycle 4s infinite;
+}
+
+.minimap {
+  width: 90%;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 90%;
+  min-height: 25vh;
+  background-color: rgba(250, 235, 215, 0.425);
+  margin-top: 20px;
+  border: 3px white solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.card-link {
+  color: white;
 }
 
 .slogan span {
@@ -207,18 +241,6 @@ a {
 @keyframes slideout2 {
   100% {
     transform: translateY(-100%);
-  }
-}
-
-@keyframes color-cycle {
-  0% {
-    color: white;
-  }
-  50% {
-    color: darkgray;
-  }
-  100% {
-    color: white;
   }
 }
 
